@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      id: add-status-column
+      author: gulsun
+
+      changes:
+        - addColumn:
+            tableName: users
+            columns:
+              - column:
+                  name: status
+                  type: varchar(20)
